@@ -9,7 +9,7 @@ public class ParallelBinarySearch<T extends Comparable<T>> {
     private final T target;
     private final ExecutorService service;
 
-    public ParallelBinarySearch(List<T> array, T target, int threadPoolSize) {
+    public ParallelBinarySearch(List<T> array, T target) {
         if (target == null) {
             throw new IllegalArgumentException("Target cannot be null.");
         }
