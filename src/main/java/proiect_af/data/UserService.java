@@ -1,4 +1,4 @@
-package data;
+package proiect_af.data;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

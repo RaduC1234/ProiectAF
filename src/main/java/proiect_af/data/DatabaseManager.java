@@ -1,4 +1,4 @@
-package data;
+package proiect_af.data;
 
 import jakarta.persistence.EntityManager;
 

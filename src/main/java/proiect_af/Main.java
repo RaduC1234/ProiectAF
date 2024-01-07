@@ -1,14 +1,14 @@
-import binarySearch.BinarySearch;
-import binarySearch.ParallelBinarySearch;
-import data.DatabaseManager;
-import data.HibernateUtil;
-import data.User;
-import data.UserService;
+package proiect_af;
+
+import proiect_af.binarySearch.BinarySearch;
+import proiect_af.binarySearch.ParallelBinarySearch;
+import proiect_af.data.DatabaseManager;
+import proiect_af.data.HibernateUtil;
+import proiect_af.data.User;
+import proiect_af.data.UserService;
 import org.apache.commons.lang3.time.StopWatch;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.logging.log4j.core.LoggerContext;
-import org.apache.logging.log4j.core.config.Configurator;
 
 import java.util.Collections;
 import java.util.List;
@@ -28,7 +28,7 @@ public class Main {
             Collections.sort(allUsers);
 
             final TimeUnit timeUnit = TimeUnit.NANOSECONDS;
-            final long target = 93195L;
+            final long target =  97153L;
 
             // prima cautare
             StopWatch parralelStopWatch = StopWatch.createStarted();

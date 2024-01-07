@@ -1,4 +1,4 @@
-package binarySearch;
+package proiect_af.binarySearch;
 
 import java.util.ArrayList;
 import java.util.List;
