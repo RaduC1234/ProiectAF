@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.*;
 
+@Deprecated
 public class SplittingBinarySearch<T extends Comparable<T>> {
 
     private final List<T> array;

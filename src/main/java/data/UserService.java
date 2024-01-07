@@ -1,14 +1,19 @@
 package data;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.NoResultException;
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 
+
 import java.util.List;
 
 @AllArgsConstructor
 public class UserService {
+
+    private static final Logger logger = LogManager.getLogger(UserService.class);
 
     private EntityManager entityManager;
 
@@ -42,7 +47,7 @@ public class UserService {
         try {
             return entityManager.find(User.class, id);
         } catch (NoResultException e) {
-            Logger.error(e.getMessage());
+            logger.error(e.getMessage());
             return null;
         }
     }

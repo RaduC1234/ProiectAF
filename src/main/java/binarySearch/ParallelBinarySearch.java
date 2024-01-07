@@ -50,9 +50,7 @@ public class ParallelBinarySearch<T extends Comparable<T>> {
 
                 if (leftResult != -1) {
                     return leftResult;
-                } else if (rightResult != -1) {
-                    return rightResult;
-                }
+                } else return rightResult;
             }
         }
 
